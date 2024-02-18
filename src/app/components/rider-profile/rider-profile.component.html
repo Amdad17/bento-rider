@@ -1,0 +1,17 @@
+
+
+<div style="text-align: right;">
+  <button nz-button nzType="primary" (click)="open()">Open </button>
+</div>
+
+<nz-drawer
+  [nzClosable]="false"
+  [nzVisible]="visible"
+  nzPlacement="right"
+  (nzOnClose)="close()"
+>
+  <ng-container *nzDrawerContent>
+    <app-rider></app-rider>
+  </ng-container>
+</nz-drawer>
+
